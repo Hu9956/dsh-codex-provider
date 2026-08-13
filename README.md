@@ -12,6 +12,11 @@ DeepSeek Harness (DSH) 供应商插件：**OpenAI Codex（ChatGPT Plus/Pro 订�
 - **供应商管理界面**：设置 → 供应商，展示登录状态、账号、套餐（Plus/Pro）、令牌过期时间，支持退出登录
 - **激活内置 Codex 模型**：登录后 `openai-codex` 路由自动激活，模型选择器直接可选
 
+
+<img width="1590" height="776" alt="ScreenShot_2026-08-14_020002_683_副本" src="https://github.com/user-attachments/assets/4c2d8b0e-edb8-46a8-876d-f297f0ec8f54" />
+<img width="1892" height="1020" alt="ScreenShot_2026-08-14_043716_413" src="https://github.com/user-attachments/assets/09abd005-4432-4eb9-b9fc-6acab9772361" />
+
+
 ## 📦 安装
 
 ```bash
