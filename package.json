@@ -40,7 +40,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "check": "node --check lib/index.js && node --check lib/client.js"
+    "check": "node --check lib/index.js && node --check lib/client.js && node --check lib/rpc.js && node --test"
   },
   "dsh": {
     "bundle": {
@@ -51,6 +51,7 @@
         "@deepseek-ai/dsh-client-connection",
         "@deepseek-ai/dsh-client-locale",
         "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-primitives",
         "@deepseek-ai/dsh-client-ui-slots",
         "@deepseek-ai/dsh-client-ui-settings"
       ],
@@ -59,7 +60,6 @@
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-typert-protocol": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-credentials": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-settings": "^0.1.0-rc.6",
     "react": "^18.2.0",
@@ -73,7 +73,6 @@
   },
   "peerDependenciesMeta": {
     "@deepseek-ai/cordis": { "optional": true },
-    "@deepseek-ai/dsh-typert-protocol": { "optional": true },
     "@deepseek-ai/dsh-credentials": { "optional": true },
     "@deepseek-ai/dsh-settings": { "optional": true },
     "react": { "optional": true },
