@@ -1,5 +1,29 @@
 # dsh-codex-provider
 
+> [!IMPORTANT]
+> **本项目已停止维护，不再更新。** 最后更新：2026-08-13。
+>
+> 它只解决一件事：把 ChatGPT 订阅额度用在 DSH 上。这件事现在有更好的做法。
+>
+> ## 推荐改用 [Magpie](https://github.com/yetone/magpie)
+>
+> 一步到位，不用改任何配置文件。装上 Magpie、用 ChatGPT 登录一次，Codex 的模型就会出现在 DSH 的模型列表里。
+>
+> - **一个界面管所有 AI 工具**：Claude Code、Codex、OpenCode、Cursor、Cline、Qoder……都在菜单栏里点一下就换。
+> - **登录过的订阅直接变成供应商**：ChatGPT、Claude Code、Copilot、Devin、Qoder 的订阅，其它工具都能用——不只是 Codex。
+> - 自带本地网关（`127.0.0.1:3425`），OpenAI / Anthropic / Gemini 三套 API 都能说，DSH 直接接。
+> - DSH 是它管理的 agent 之一：把模型选成 `codex/` 开头的任一模型即可。
+> - 模型列表跟着厂商自动刷新；多账号可按额度智能分配，还能给模型定价看花费。
+>
+> 官网与下载：<https://usemagpie.ai>　源码：<https://github.com/yetone/magpie>（MIT）
+>
+> **迁移三步**
+> 1. 安装 Magpie（macOS / Windows / Linux）：<https://usemagpie.ai>，或 `curl -fsSL https://usemagpie.ai/install.sh | sh`
+> 2. 在 Magpie 里登录你的 ChatGPT 账号
+> 3. Agents 里找到 DeepSeek Harness，把模型选成 `codex/…`
+>
+> 以下内容作为存档保留。已安装本插件的用户可以继续使用，不受 Magpie 影响。
+
 DeepSeek Harness (DSH) 供应商插件：**OpenAI Codex（ChatGPT Plus/Pro 订阅）** 的设备码 OAuth 登录、令牌自动刷新与供应商管理。
 
 在 DSH 设置中新增 **“供应商”** 分区，通过设备码授权登录 OpenAI 账号后，即可在模型选择器中使用 DSH 内置的 `openai-codex` 模型（`gpt-5.4`、`gpt-5.5`、`gpt-5.6-*` 等），消费你的 **ChatGPT Plus / Pro 订阅额度**。
